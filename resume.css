@@ -1,0 +1,404 @@
+
+body{
+    margin = 0px;
+}
+
+#body-header{
+    height:65vh;
+    opacity: 0.8;
+    background-image: url(pic7.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 1rem;
+    margin: 0px;
+}
+.horizontal-list li{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    display: inline-block;
+    margin: 0px 20px 20px 0px;
+}
+.horizontal-list li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.5s, border bottom 0.5s;
+    padding: 15px;
+}
+
+.nav-underline li a:hover{
+    color:lightgray;
+    border-bottom: 1px solid lightgray ;
+    box-shadow: 0px 2px 0px 0px gray;
+}
+.text-center{
+    text-align: center;
+}
+#my-name{
+    font-family:sans-serif;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+.social-icons li a i{
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: color 0.5s,box-shadow 0.5s;
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 10px 4px lightgray;
+}
+
+#about{
+    height: auto;
+    width:100%;
+    position: relative;
+}
+#my-image{
+    height: 15rem;
+    width: 15rem;
+    margin: auto;
+    margin-top: -7rem;
+    
+}
+#my-image img{
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    box-shadow: 0px 0px 10px 4px lightgray;
+}
+#intro-para{
+    font-size: 1rem;
+    font-family:sans-serif;
+    font-weight: 700;
+    color:black;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: justify;
+    font-weight: 300;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n){
+    background-color:white;
+}
+section:nth-child(2n+1){
+    background-color:rgb(247, 247, 238);
+}
+.section-heading{
+    color:rgb(14, 89, 170);
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+/**************************************** skill section ********************************/
+.various-skills{
+    width: 70%;
+    height: auto;
+    display: flex;
+    /*background-color: gray;*/
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 40px;
+}
+.skill-progress{
+    width: 10rem;
+    height: 1.6rem;
+   /* border: 2px solid gray;*/
+    background-color: lightgray;
+    border-radius: 1.5rem;
+    margin: 20px;
+    box-shadow: 0px 0px 4px 1px gray;
+}
+/*section span{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+   text-align: justify;
+    color: white;
+}*/
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    font-family: sans-serif;
+    margin-left: 20px;
+    
+}
+ /************************************ portfolio **********************************/
+#container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    /*background-color: gray;*/
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-bottom: 40px;
+}
+.port-img{
+      width: 35vh;
+      height: 35vh;
+      border-radius: 1rem;
+      margin: 20px; 
+      transition:border 0.5s,box-shadow 0.5s;
+}
+.port-img:hover{
+    box-shadow: 0px 0px 10px 6px rgb(84, 164, 238);
+    border: 1px solid rgb(84, 164, 238);
+    
+}
+.port-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+}
+
+/******************************** contact section *****************************************/
+
+.contact-section{
+    background-color: rgb(14, 89, 170);
+    width: 100%;
+    height: 75vh;
+    margin: 0px;
+}
+.contact-heading{
+    margin-top: 20px;
+    color:white;
+    font-size: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px 10px 10px;
+    font-weight: 400;
+}
+
+/******************************** work experience and education ***************************/
+.timeline{
+    position: relative;
+    width:70%;
+    height:70%;
+    /*border: 2px solid black;*/
+    margin-bottom: 30px;
+}
+
+.timeline-box{
+    position: relative;
+    width:50vh;
+    height:30vh;
+    left: 5%;
+    /*border: 1px solid black;*/
+    margin: 5px;
+    border-radius: 2rem;
+    transition:border 0.5s,box-shadow 0.5s;
+    padding: 10px;
+}
+.timeline-box:hover{
+    box-shadow: 0px 0px 10px 6px rgb(84, 164, 238);
+    border: 1px solid rgb(84, 164, 238);
+}
+
+.timeline-box:nth-child(2n){
+    left: 56%;
+    text-align: left;
+}
+.timeline-box:nth-child(2n+1){
+    left: 5px;
+    text-align: right;
+}
+
+.box-heading{
+    font-size: 1.5rem;
+    color: rgb(14, 89, 170);
+    /*text-align:right;*/
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.box-heading:nth-child(2n){
+    text-align: left;
+}
+.box-heading:nth-child(2n+1){
+    text-align: right;
+}
+
+.box-heading img{
+    width:30px;
+    height:30px;
+}
+.box-heading:nth-child(2n+1)::after{
+    display: inline-block;
+    background-image: url(ymca-logo.png);
+    background-size: contain;
+    content: '';
+    width:30px;
+    height:30px;
+
+}
+.box-heading:nth-child(2n)::before{
+    display: inline-block;
+    background-image: url(ymca-logo.png);
+    background-size: contain;
+    content: '';
+    width:30px;
+    height:30px;
+
+}
+.timeline-box:nth-child(2n+1)::after{
+    position: absolute;
+    content: '';
+    background-color: gray;
+    width: 00.5rem;
+    height: 00.5rem;
+    border-radius: 50%;
+    top:55%;
+    right: -14.8%;
+    z-index: 2;
+}
+.timeline-box:nth-child(2n)::after{
+    position: absolute;
+    content: '';
+    background-color: gray;
+    width: 00.5rem;
+    height: 00.5rem;
+    border-radius: 50%;
+    top:44%;
+    left: -15.5%;
+    z-index: 2;
+}
+.timeline-box p{
+    /*text-align: justify;*/
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.timeline-divider{
+    position: absolute;
+    height: 68%;
+    width: 0;
+    border: 1px dashed lightgray;
+    left: 50%;
+    margin-top: 29%;
+    padding: 0px;
+   /* z-index: 1;*/
+}
+.timeline-divider-1{
+    position: absolute;
+    height: 68%;
+    width: 0;
+    border: 1px dashed lightgray;
+    left: 50%;
+    margin-top: 44.8%;
+    padding: 0px;
+    /*z-index: 1;*/
+}
+.timeline-travellar{
+    position: sticky;
+    top: 30%;
+    font-size: 2rem;
+    color: rgb(14, 89, 170);
+    transform: rotate(90deg);
+    margin-right: 10px;
+    z-index: 3;
+}
+.timeline-travellar-1{
+    position: sticky;
+    top: 30%;
+    font-size: 2rem;
+    color: rgb(14, 89, 170);
+    margin-right: 10px;
+    transform: rotate(90deg);
+    z-index: 3;
+}
+/************ media screen for mobile experience and education **************/
+
+@media screen and (max-width:600px){
+
+    .timeline-divider{
+        position: absolute;
+        height: 68%;
+        width: 0;
+        border: 1px dashed lightgray;
+        left: -10%;
+        margin-top: 90%;
+        padding: 0px;
+       /* z-index: 1;*/
+    }
+
+    .timeline-divider-1{
+        position: absolute;
+        height: 68%;
+        width: 0;
+        border: 1px dashed lightgray;
+        left: 10%;
+        margin-top: 210%;
+        padding: 0px;
+    }
+    .timeline-box::before{
+        position: absolute !important;
+        content: ''!important;
+        background-color: gray!important;
+        width: 00.5rem!important;
+        height: 00.5rem!important;
+        border-radius: 50%!important;
+        top:55%!important;
+        right: 10%!important;
+        z-index: 2!important;
+    }
+    
+    .timeline-box{
+        position: relative;
+        width:40vh;
+        height:30vh;
+        left: 7%;
+        /*border: 1px solid black;*/
+        margin: 10px !important;
+        border-radius: 2rem;
+        transition:border 0.5s,box-shadow 0.5s;
+        padding: 15px;
+        left: 5px !important;
+        text-align: justify !important;
+    }
+
+}
+
+/*****************(skills)  percent profeciency ************************/
+.eighty-percent{
+    width:90%;
+    height: 1.6rem;
+    background-color: rgb(28, 129, 67);
+    border-radius: 1.5rem 0rem 0rem 1.5rem;
+    box-shadow: 2px 0px 4px 0.5px gray;
+}
+.fifty-percent{
+    width:50%;
+    height: 1.6rem;
+    background-color: rgb(15, 78, 160);
+    border-radius: 1.5rem 0rem 0rem 1.5rem;
+    box-shadow: 2px 0px 4px 0.5px gray;
+}
+.seventy-percent{
+    width:70%;
+    height: 1.6rem;
+    background-color: rgb(223, 112, 48);
+    border-radius: 1.5rem 0rem 0rem 1.5rem;
+    box-shadow: 2px 0px 4px 0.5px gray;
+}
